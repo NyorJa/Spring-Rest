@@ -6,6 +6,7 @@ import com.gretrozh.springbootbackendapirest.models.entity.Cliente;
  
 public interface IClienteService {
 	
-	public List<Cliente> findAll();
+	List<Cliente> findAll();
+	Cliente buscarPorCorreo(String correo);
 
 }

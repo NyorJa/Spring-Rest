@@ -21,4 +21,9 @@ public class ClienteServiceImpl implements IClienteService{
 		return (List<Cliente>) clienteDao.findAll();
 	}
 
+	@Override
+	public Cliente buscarPorCorreo(String correo) {
+		return clienteDao.findByEmail(correo);
+	}
+
 }
