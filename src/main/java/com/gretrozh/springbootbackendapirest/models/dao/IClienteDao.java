@@ -6,5 +6,5 @@ import com.gretrozh.springbootbackendapirest.models.entity.Cliente;
 
 public interface IClienteDao extends CrudRepository<Cliente, Long>{
 
-    Cliente findByEmail(String email);
+    Cliente findByName(String email);
 }
