@@ -31,9 +31,4 @@ public class ClienteServiceImpl implements IClienteService{
 		return clienteDao.findByNombre(nombre);
 	}
 
-	@Override
-	public Cliente buscarPorId(Long id) {
-		return clienteDao.findById(id).orElse(null);
-	}
-
 }
