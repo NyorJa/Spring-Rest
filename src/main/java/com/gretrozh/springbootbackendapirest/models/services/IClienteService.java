@@ -8,5 +8,6 @@ public interface IClienteService {
 	
 	List<Cliente> findAll();
 	Cliente buscarPorCorreo(String correo);
+	Cliente buscarPorNombre(String nombre);
 
 }
